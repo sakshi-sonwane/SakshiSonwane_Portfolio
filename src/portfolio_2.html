@@ -19,7 +19,7 @@
       class="sticky top-0 z-50 bg-white/30 backdrop-blur-sm border-b border-white/20 shadow-sm px-5 py-3"
     >
       <div class="flex items-center text-2xl justify-between">
-        <p id="sakshi" class="font-extrabold md:text-4xl text-2xl">SAKSHI</p>
+        <p id="sakshi" class="font-extrabold text-4xl sm:text-2xl">SAKSHI</p>
 
         <nav class="">
           <svg
@@ -57,7 +57,7 @@
               ></path>
             </g>
           </svg>
-          <div class="all_navs hidden md:flex">
+          <div class="all_navs hidden lg:flex">
             <ul class="flex gap-8 text-lg cursor-pointer">
               <li><a href="#home" class="hover:underline">Home</a></li>
               <li><a href="#about" class="hover:underline">About</a></li>
@@ -73,7 +73,7 @@
           </div>
         </nav>
 
-        <div class="flex gap-2 hidden md:flex">
+        <div class="flex gap-2 hidden lg:flex">
           <a
             href="https://drive.google.com/file/d/1ifm1RvSSHMNrfQDa9uABrZmjjKvs1NVp/view?usp=drive_link"
           >
@@ -97,68 +97,35 @@
       </div>
     </section>
 
-    <section id="home" class="px-10 pt-10 text-white gap-10">
-      <div
-        class="p-20 flex flex-col sm:flex-row justify-center items-center bg-linear-to-r from-pink-400 via-rose-400 to-rose-500 shadow-[0_8px_32px_0_rgba(31,38,135,0.37)] mb-10 border border-white/10 rounded-[20px] backdrop-blur-3xl"
-      >
-        <div class="image flex sm:flex-row md:flex-row justify-center">
-          <img
-            src="https://images.pexels.com/photos/6593569/pexels-photo-6593569.jpeg"
-            alt="Profile Photo"
-            class="w-50 sm:w-60 md:w-70 aspect-square object-cover border-3 rounded-full border-white/40"
-          />
-        </div>
-
-        <div class="text-left sm:flex-row sm:p-8 lg:text-left p-5">
-          <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold">
-            SAKSHI SONWANE
-          </h1>
-
-          <h2
-            class="text-2xl sm:text-3xl md:text-4xl md:sm:text-left font-semibold mt-2 italic"
-          >
-            UI/UX Designer || Frontend Developer
-          </h2>
-
-          <h3
-            class="text-xl sm:text-left md:text-left md:text-xl font-light mt-2"
-          >
-            Designing interfaces that are clear, usable, and thoughtful.
-          </h3>
-        </div>
+    <section id="home" class="flex">
+      <div class="lg:flex h-screen">
+        <img
+          src="https://images.pexels.com/photos/6593569/pexels-photo-6593569.jpeg"
+          alt="Profile Photo"
+          class="w-300 h-100 m-5 object-cover"
+        />
       </div>
+
+      <div class="relative text-9xl p-5 mt-10 text-rose-300 font-extrabold">
+        PORTFOLIO
+      </div>
+      <div class="absolute mt-25 ml-160 font-bold text-6xl z-10 italic">
+        SAKSHI SONWANE
+      </div>
+      <h2 class="absolute mt-45 mb-15 text-2xl font-medium ml-160">
+        UI/UX Designer || Frontend Developer
+      </h2>
+      <h3 class="absolute mt-50 pt-3 text-xl font-light ml-160">
+        Designing interfaces that are clear, usable, and thoughtful
+      </h3>
     </section>
 
-    <div class="flex justify-center items-center gap-2 md:hidden">
-          <a
-            href="https://drive.google.com/file/d/1ifm1RvSSHMNrfQDa9uABrZmjjKvs1NVp/view?usp=drive_link"
-          >
-            <button
-              type="submit"
-              class="flex justify-center items-center px-5 py-2 text-[20px] bg-rose-400 text-white rounded hover:scale-110 transition duration-200"
-            >
-              Resume
-            </button></a
-          >
-
-          <a href="#connect">
-            <button
-              type="submit"
-              class="flex justify-center items-center px-5 py-2 text-[20px] text-rose-500 ring-1 ring-rose-400 rounded hover:scale-110 transition duration-200"
-            >
-              Connect
-            </button>
-          </a>
-        </div>
-
-    <section id="about" class="flex flex-col relative md:flex-row">
-      <div class="both_hello">
-        <div class="text-7xl md:text-8xl text-center p-5 mt-10 text-rose-300 font-extrabold">HELLO</div>
-        <div class="absolute top-20 left-50 md:text-5xl md:left-30 md:top-20 font-bold text-4xl z-10 italic">
-          Hello
-        </div>
+    <section id="about" class="flex relative">
+      <div class="text-8xl p-5 text-rose-300 font-extrabold">HELLO</div>
+      <div class="absolute top-10 left- font-bold text-5xl z-10 italic">
+        Hello
       </div>
-      <div class="pt-5 md:pt-20 mx-5 text-justify font-medium italic">
+      <div class="pt-5 font-medium italic">
         I'm Sakshi, a UI/UX designer who's curious about how people actually use
         digital products, not just how they look. I pay attention to the small
         decisions that shape an experience, from layout and spacing to how an
@@ -167,16 +134,13 @@
     </section>
 
     <section id="skills" class="relative">
-      <div class="text-center md:text-left">
-      <div class="text-7xl md:text-8xl p-5 mt-10 text-rose-300 font-extrabold">SKILLS</div>
-      <div class="absolute top-10  left-40 md:left-25 font-bold text-4xl md:text-5xl z-10 italic ">
+      <div class="text-8xl p-5 mt-10 text-rose-300 font-extrabold">SKILLS</div>
+      <div class="absolute top-10 left-30 font-bold text-5xl z-10 italic">
         Skills
       </div>
-      </div>
-      </div>
 
-      <ul class="pl-5 text-center md:text-left">
-        <li class="text-xl md:text-2xl flex gap-3 mt-3 items-center font-bold">
+      <ul class="pl-5">
+        <li class="text-2xl flex gap-3 mt-3 items-center font-bold">
           Programming Languages
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -269,7 +233,7 @@
             </g>
           </svg>
         </li>
-        <li class="text-xl md:text-2xl flex gap-3 mt-3 items-center font-bold">
+        <li class="text-2xl flex gap-3 mt-3 items-center font-bold">
           Frontend Technologies
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -301,7 +265,7 @@
             alt="tailwind_css"
           />
         </li>
-        <li class="text-xl md:text-2xl flex gap-3 mt-3 items-center font-bold">
+        <li class="text-2xl flex gap-3 mt-3 items-center font-bold">
           Design Tools<svg
             xmlns="http://www.w3.org/2000/svg"
             x="0px"
@@ -315,7 +279,7 @@
             ></path>
           </svg>
         </li>
-        <li class="text-xl md:text-2xl flex gap-3 mt-3 items-center font-bold">
+        <li class="text-2xl flex gap-3 mt-3 items-center font-bold">
           Developer Tools
           <img
             width="48"
@@ -328,24 +292,24 @@
     </section>
 
     <section id="projects" class="relative">
-      <div class="text-7xl md:text-8xl text-center md:text-left p-3 mt-10 text-rose-300 font-extrabold">
+      <div class="text-8xl p-3 mt-10 text-rose-300 font-extrabold">
         PROJECTS
       </div>
 
-      <div class="absolute top-8 md:top-10 left-35 md:left-25 font-bold text-4xl md:text-5xl z-10 italic">
+      <div class="absolute top-10 left-30 font-bold text-5xl z-10 italic">
         Projects
       </div>
 
-      <div class="first_project flex flex-col md:flex-row items-center md:items-start gap-8">
+      <div class="first_project flex flex-row items-start gap-8 md:shrink-0">
         <img
           src="./REAL STATE WEB MOCKUP.png"
           alt=""
-          class="w-80 mt-5 md:w-120 md:mt-10"
+          class="w-120 mt-10"
           srcset=""
         />
         <div class="px-5">
-          <h2 class="mt-5 md:mt-10 font-bold text-3xl md:text-4xl mb-5">REAL ESTATE WEBSITE</h2>
-          <h3 class="font-semibold text-2xl md:text-3xl md:px-0 underline italic mb-2">
+          <h2 class="mt-10 font-bold text-4xl mb-5">REAL ESTATE WEBSITE</h2>
+          <h3 class="font-semibold text-3xl underline italic mb-2">
             The Challenge
           </h3>
           <p class="mb-0 max-w-full text-justify">
@@ -356,7 +320,7 @@
             home or investment property.
           </p>
           <br />
-          <h3 class="font-semibold text-2xl md:text-3xl underline italic mb-2 mt-0">
+          <h3 class="font-semibold text-3xl underline italic mb-2 mt-0">
             Design Approach
           </h3>
 
@@ -394,19 +358,19 @@
         </div>
       </div>
 
-      <div class="second_project flex flex-col md:flex-row items-center md:items-start p-5 ">
+      <div class="second_project flex p-5">
         <img
           src="./mobile screens.png"
-          
-        
+          width="450"
+          height="200"
           alt=""
-          class="mt-10 p-0 w-80 h-60 md:w-120 md:h-100"
+          class="mt-10 p-0 w-120"
           srcset=""
         />
-        <div class="flex flex-col">
-          <h2 class="mt-10 font-bold text-3xl md:text-4xl mb-5">JUCIFY MOBILE APP</h2>
+        <div class="flex flex-col px-5">
+          <h2 class="mt-10 font-bold text-4xl mb-5">JUCIFY MOBILE APP</h2>
 
-          <h3 class="font-semibold text-2xl md:text-3xl underline italic mb-2">
+          <h3 class="font-semibold text-3xl underline italic mb-2">
             The Challenge
           </h3>
           <p class="mb-0 max-w-full text-justify">
@@ -415,7 +379,7 @@
             felt energetic and fun without sacrificing usability — keeping the
             order flow simple while letting the product visuals do the talking.
           </p>
-          <h3 class="font-semibold text-2xl md:text-3xl mt-5 underline italic mb-2">
+          <h3 class="font-semibold text-3xl mt-5 underline italic mb-2 mt-0">
             Design Approach
           </h3>
 
@@ -454,20 +418,20 @@
       </div>
 
       <div
-        class="third_project flex flex-col md:flex-row items-center md:items-start gap-8 p-5"
+        class="third_project flex flex-col lg:flex-row items-start gap-8 p-5"
       >
         <img
           src="./ONCOLGY MOCKUP.png"
           alt="Oncology Website Mockup"
-          class=" w-80 md:w-112 md:mt-5"
+          class="w-[450px] mt-5"
         />
 
         <div class="flex flex-col px-5">
-          <h2 class="mt-5 font-bold text-3xl md:text-4xl mb-5">
+          <h2 class="mt-5 font-bold text-4xl mb-5">
             ONCOLOGY EXCELLENCE CENTER LANDING PAGE
           </h2>
 
-          <h3 class="font-semibold text-2xl md:text-3xl underline italic mb-2">
+          <h3 class="font-semibold text-3xl underline italic mb-2">
             The Challenge
           </h3>
 
@@ -479,7 +443,7 @@
             stress.
           </p>
 
-          <h3 class="font-semibold text-2xl md:text-3xl underline italic mb-2 mt-3">
+          <h3 class="font-semibold text-3xl underline italic mb-2 mt-3">
             Design Approach
           </h3>
 
@@ -514,20 +478,20 @@
       </div>
 
       <div
-        class="third_project flex flex-col md:flex-row items-center md:items-start gap-8 p-5"
+        class="third_project flex flex-col lg:flex-row items-start gap-8 p-5"
       >
         <img
           src="./Shopping website mockup.png"
           alt="Oncology Website Mockup"
-          class=" w-80 md:w-112 mt-5"
+          class="w-[450px] mt-5"
         />
 
         <div class="flex flex-col px-5">
-          <h2 class="mt-5 font-bold  text-3xl md:text-4xl mb-5">
+          <h2 class="mt-5 font-bold text-4xl mb-5">
             FASHION FUSION SHOPPING WEBSITE
           </h2>
 
-          <h3 class="font-semibold text-2xl md:text-3xl underline italic mb-2">
+          <h3 class="font-semibold text-3xl underline italic mb-2">
             The Challenge
           </h3>
 
@@ -538,7 +502,7 @@
             from browsing to purchase as short as possible.
           </p>
 
-          <h3 class="font-semibold text-2xl md:text-3xl underline italic mb-2 mt-3">
+          <h3 class="font-semibold text-3xl underline italic mb-2 mt-3">
             Design Approach
           </h3>
 
@@ -576,40 +540,40 @@
     </section>
 
     <section id="education" class="relative">
-      <div class="text-7xl md:text-8xl text-center md:text-left p-5 mt-10 text-rose-300 font-extrabold">
+      <div class="text-8xl p-5 mt-10 text-rose-300 font-extrabold">
         EDUCATION
       </div>
-      <div class="absolute top-10 left-30 font-bold text-4xl md:text-5xl z-10 italic">
+      <div class="absolute top-10 left-30 font-bold text-5xl z-10 italic">
         Education
       </div>
 
       <div class="degrees">
         <ul class="pl-5">
-          <li class="text-xl md:text-2xl flex justify-between md:mr-10 gap-3 mt-3 items-center font-semibold md:font-bold uppercase">
-            Devi Ahilya Vishwavidyalaya (SCSIT), indore 
-            <span class="ml-30 text-[15px] md:text-[25px] md:ml-130 font-light md:font-medium">2024-2026</span>
+          <li class="text-2xl flex gap-3 mt-3 items-center font-bold uppercase">
+            Devi Ahilya Vishwavidyalaya (SCSIT), indore
+            <span class="ml-130 font-medium">2024-2026</span>
           </li>
-          <li class="text-[15px] md:text-xl flex gap-3 items-center font-light capitalize">
+          <li class="text-xl flex gap-3 items-center font-light capitalize">
             Master of Computer Applications(MCA)
           </li>
         </ul>
 
         <ul class="pl-5">
-          <li class="text-xl md:text-2xl flex justify-between md:mr-10 gap-3 mt-3 items-center font-semibold md:font-bold uppercase">
+          <li class="text-2xl flex gap-3 mt-3 items-center font-bold uppercase">
             makerspace technologies, indore
-            <span class="ml-40 md:ml-158 text-[15px] md:text-[25px]  font-light md:font-medium">2023-2024</span>
+            <span class="ml-158 font-medium">2023-2024</span>
           </li>
-          <li class="text-[15px] md:text-xl flex gap-3 items-center font-light capitalize">
+          <li class="text-xl flex gap-3 items-center font-light capitalize">
             uI/uX designing
           </li>
         </ul>
 
         <ul class="pl-5">
-          <li class="text-xl md:text-2xl flex justify-between md:mr-10 gap-3 mt-3 items-center font-semibold md:font-bold uppercase">
-            Devi Ahilya Vishwavidyalaya (SCSIT), indore 
-            <span class="ml-30 text-[15px] md:text-[25px] md:ml-130 font-light md:font-medium">2021-2024</span>
+          <li class="text-2xl gap-3 mt-3 items-center font-bold uppercase">
+            Devi Ahilya Vishwavidyalaya, indore
+            <span class="ml-156 font-medium">2021-2024</span>
           </li>
-          <li class="text-[15px] md:text-xl flex gap-3 items-center font-light capitalize">
+          <li class="text-xl flex gap-3 items-center font-light capitalize">
             Bachelor of Computer Applications (BCA)
           </li>
         </ul>
@@ -617,23 +581,23 @@
     </section>
 
     <section id="experience" class="relative">
-      <div class="text-7xl md:text-8xl px-5 mt-10 text-rose-300 font-extrabold">
+      <div class="text-8xl p-5 mt-10 text-rose-300 font-extrabold">
         EXPERIENCE
       </div>
-      <div class="absolute top-5 left-30 md:top-6 md:left-30 font-bold text-4xl md:text-5xl z-10 italic">
+      <div class="absolute top-10 left-30 font-bold text-5xl z-10 italic">
         Experience
       </div>
       <ul class="pl-5">
-        <li class="text-xl md:text-2xl flex justify-between mr-3 md:mr-10 gap-3 mt-3 items-center font-bold uppercase">
+        <li class="text-2xl flex gap-3 mt-3 items-center font-bold uppercase">
           Freelance UI Designer
-          <span class="ml-40 md:ml-215 text-[15px] md:text-[25px] font-light md:font-medium">2025</span>
+          <span class="ml-215 font-medium">2025</span>
         </li>
         <li
-          class="text-[15px] md:text-xl flex gap-3 italic items-center font-light capitalize"
+          class="text-xl flex gap-3 italic items-center font-light capitalize"
         >
           Vyan Webs Technology, Indore
         </li>
-        <ul class="list-disc hidden md:block px-5">
+        <ul class="list-disc ml-5">
           <li>Created wireframes and interactive prototypes using Figma</li>
           <li>
             Collaborated with developers to ensure design implementation
@@ -643,16 +607,16 @@
       </ul>
 
       <ul class="pl-5">
-        <li class="text-xl md:text-2xl flex justify-between m md:mr-10 gap-3 mt-3 items-center font-bold uppercase">
+        <li class="text-2xl flex gap-3 mt-3 items-center font-bold uppercase">
           Freelance UI Designer
-          <span class="ml-40 md:ml-215 text-[15px] md:text-[25px] font-light md:font-medium">2026</span>
+          <span class="ml-215 font-medium">2026</span>
         </li>
         <li
-          class="text-[15px] md:text-xl flex gap-3 italic items-center font-light capitalize"
+          class="text-xl flex gap-3 italic items-center font-light capitalize"
         >
           NovaEdge Digital Labs, Indore
         </li>
-        <ul class="list-disc ml-5 hidden md:block px-5">
+        <ul class="list-disc ml-5">
           <li>
             Designed end-to-end UI/UX for a legal-tech platform connecting
             lawyers and clients
@@ -669,21 +633,21 @@
       </ul>
     </section>
 
-    <section id="connect" class="relative text-center md:text-left">
-      <div class="text-7xl md:text-8xl p-5 mt-10 text-rose-300 font-extrabold">CONNECT</div>
-      <div class="absolute md:top-10 top-10 md:left-30 left-40 font-bold text-4xl md:text-5xl z-10 italic">
+    <section id="connect" class="relative">
+      <div class="text-8xl p-5 mt-10 text-rose-300 font-extrabold">CONNECT</div>
+      <div class="absolute top-10 left-30 font-bold text-5xl z-10 italic">
         Connect
       </div>
 
-      <div id="logos" class="flex justify-center md:justify-start items-center ml-3.5">
-        <div class="mail text-center ">
+      <div id="logos" class="flex justify-start items-center ml-3.5">
+        <div class="mail">
           <a href="mailto:sakshisonwane1947@gmail.com">
             <svg
-              
-              
+              height="50px"
+              width="50px"
               version="1.1"
               id="_x32_"
-              class="h-[30px] md:h-[50px] ml-5 hover:scale-110 transition duration-200"
+              class="ml-5 hover:scale-110 transition duration-200"
               xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink"
               viewBox="0 0 512 512"
@@ -716,9 +680,9 @@
         <div class="linkedin">
           <a href="https://www.linkedin.com/in/sakshi-sonwane-ab45a82bb/">
             <svg
-              
-             
-              class="h-[40px] md:h-[60px] ml-5 hover:scale-110 transition duration-200"
+              width="60px"
+              height="60px"
+              class="ml-5 hover:scale-110 transition duration-200"
               viewBox="0 0 24 24"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -742,9 +706,10 @@
         <div class="github">
           <a href="https://github.com/sakshi-sonwane">
             <svg
-             "
+              width="60px"
+              height="60px"
               viewBox="0 0 24 24"
-              class="h-[40px] md:h-[60px]  ml-5 hover:scale-110 transition duration-200"
+              class="ml-5 hover:scale-110 transition duration-200"
               xmlns="http://www.w3.org/2000/svg"
               fill="#000000"
             >
@@ -769,8 +734,9 @@
           <a href="https://www.behance.net/sakshisonwane">
             <svg
               fill="#000000"
-             
-              class="h-[40px] md:h-[60px] ml-5 hover:scale-110 transition duration-200"
+              width="60px"
+              height="60px"
+              class="ml-5 hover:scale-110 transition duration-200"
               viewBox="0 0 32 32"
               version="1.1"
               xmlns="http://www.w3.org/2000/svg"
